@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+ }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+  list-style: none;
+
+}
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: var(--Light-Gray);
+}
+.container{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    max-width: 0 auto;
+    padding: 50px 30px;
+    overflow: hidden;
+    width: 100%;
+}
+.card .head{
+    background-color: white;
+    font-weight: 700;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+}
+.card .head h1{
+    font-size: 1.2rem;
+    color: var(--Cyan);
+    padding-bottom: 15px;
+}
+.card .head h2{
+    font-size: 1rem;
+    color: var(--Bright-Yellow);
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+.card .head p{
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 2;
+    color: var(--Grayish-Blue);
+}
+.card .bottom .price{
+    padding: 20px 30px;
+    background-color: var(--Cyan);
+}
+.card .bottom .price h2{
+    font-size: 1rem;
+    color: var(--Light-Gray);
+    padding-bottom: 10px;
+}
+.card .bottom .price span{
+    font-size: 1.5rem;
+    color: white;
+}
+.card .bottom .price h4{
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 80%);
+    font-weight: 400;
+    line-height: 1.5;
+}
+.card .bottom .price p{
+    font-size: 0.8rem;
+    color: var(--Light-Gray);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.card .bottom .price .btn{
+    padding: 10px 50px;
+    color: white;
+    background-color: var(--Bright-Yellow);
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    font-size: 0.8rem;
+}
+.card .bottom .why{
+    background:hsl(204, 100%, 65%);
+    padding: 20px 30px;
+    border-radius: 0 0 10px 10px;
+}
+.card .bottom .why h2{
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: white;
+}
+.card .bottom .why ul li{
+    color: var(--Light-Gray);
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+/* Desktop View */
+@media (min-width:550px){
+    .card{
+        max-width: 600px;
+    }
+    .card .head h1{
+        font-size: 1.5rem;
+        color: var(--Cyan);
+        padding-bottom: 15px;
+    }
+    .card .head h2{
+        font-size: 1.2rem;
+    }
+    .card .head p{
+        font-size: 1rem;
+    }
+    .card .bottom{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .card .bottom .price{
+        width: 50%;
+        border-radius: 0 0 0 10px;
+    }
+    .card .bottom .why{
+        border-radius: 0 0 10px 0;
+        width: 50%;
+    }
+    .card .bottom .price h2{
+        font-size: 1.2rem;
+    }
+    .card .bottom .price span{
+        font-size: 1.8rem;
+    }
+    .card .bottom .price h4{
+        font-size: 1rem;
+    }
+    .card .bottom .price p{
+        font-size: 1rem;
+    }
+    .card .bottom .price .btn{
+        padding: 20px 50px;
+        font-size: 1rem;
+    }
+    .card .bottom .why{
+        border-radius: 0 0 10px 0;
+        font-size: 1.2rem;
+    }
+    .card .bottom .why ul li{
+        font-size: 1rem;
+    }
+    .attribution {
+        font-size: 11px; 
+        text-align: center; 
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
